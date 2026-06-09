@@ -13,11 +13,14 @@ class LevelBase(BaseModel):
     difficulty: str = "easy"
 
     base_health: int = 100
-    start_resources: int = 100
+
+    # было 100
+    start_resources: int = 500
 
     map_config: dict[str, Any] | None = None
     waves_config: list[dict[str, Any]] | None = None
     defense_config: list[dict[str, Any]] | None = None
+
     campaign: str | None = None
     order_number: int = 0
 

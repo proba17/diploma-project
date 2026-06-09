@@ -174,11 +174,6 @@ def get_my_results(
             "damage_taken": result.damage_taken,
             "time_spent": result.time_spent,
 
-            "correct_blocks": result.correct_blocks or 0,
-            "false_positives": result.false_positives or 0,
-            "allowed_normal_traffic": result.allowed_normal_traffic or 0,
-            "accuracy": result.accuracy or 0,
-
             "created_at": result.created_at,
         }
         for result in results
