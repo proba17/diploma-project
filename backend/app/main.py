@@ -19,6 +19,7 @@ from app.db.database import SessionLocal
 from app.db.seed_defense_modules import seed_defense_modules
 from app.db.seed_test_questions import seed_questions
 from app.db.database import SessionLocal
+
 app = FastAPI(
     title="CyberDefense Game API",
     description="Backend API для дипломного проекта обучающей игры Tower Defense",
@@ -74,3 +75,4 @@ def health_check():
 app.include_router(
     final_test.router
 )
+
